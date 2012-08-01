@@ -30,10 +30,11 @@
 
 (defpartial sample-cards []
   (html
-   [:p "Test credit card numbers:"]
+   [:p "Test credit card numbers: ("
+   (link-to "https://www.paypalobjects.com/en_US/vhelp/paypalmanager_help/credit_card_numbers.htm" "Source") ")"    ]
    [:ul
     (map #(vector :li %) test-cards)]
-   (link-to "https://www.paypalobjects.com/en_US/vhelp/paypalmanager_help/credit_card_numbers.htm" "Source")))
+))
 
 (defpage "/" {:as scrubbed-text}
   (layout
