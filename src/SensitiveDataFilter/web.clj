@@ -16,11 +16,11 @@
 
 (defpartial fields []
   (label "text" "Text to scrub: ")
-  (text-field "text"))
+  (text-field {:width 40} "text"))
 
 (defpartial scrubbed-data [scrubbed-value]
-  (label "scrubbed-text" "Your scrubbed text: ")
-  (text-field "scrubbed-text" scrubbed-value))
+  (label "scrubbed-text" "Scrubbed text: ")
+  (text-field {:width 40}  "scrubbed-text" scrubbed-value))
 
 (defpage "/" {:as scrubbed-text}
   (layout
