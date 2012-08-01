@@ -22,11 +22,11 @@
 
 (defpartial fields []
   (label "text" "Text to scrub: ")
-  (text-field {:width 40} "text"))
+  (text-field {:size 50} "text"))
 
 (defpartial scrubbed-data [scrubbed-value]
   (label "scrubbed-text" "Scrubbed text: ")
-  (text-field {:width 40}  "scrubbed-text" scrubbed-value))
+  (text-field {:size 50}  "scrubbed-text" scrubbed-value))
 
 (defpartial sample-cards []
   (html
